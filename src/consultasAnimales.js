@@ -1,5 +1,5 @@
 //animales con peso menor a 1000
-db.animales.find({peso: {$gt:1000}})
+db.animales.find({"tamaño.peso": {$gt:1000}})
 
 //todos los animales cuya longevidad sea 32 y cuya dieta no sea carnivora (uso de $and (explícito), $eq y $ne)
 db.animales.find({$and: [ {longevidad: {$eq: 32}} , {dieta:{$ne: "carnivora"}} ]})
