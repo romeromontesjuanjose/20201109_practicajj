@@ -18,5 +18,5 @@ db.animales.find({dieta: {$not: {$in: ["carnivora" , "herbivora"]}} })
 db.animales.find({dieta: {$nin: ["carnivora", "herbivora"]} })
 
 //Todos los animales que tenga en su nombre una a despues cualquier letra y despues una a,
-//un ejemplo de este tipo de palabra sería casa ($uso de $regex)
+//un ejemplo de este tipo de palabra sería 'casa' ($uso de $regex)
 db.animales.find({raza: {$regex:/a.a/} })
